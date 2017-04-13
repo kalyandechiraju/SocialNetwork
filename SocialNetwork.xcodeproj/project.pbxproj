@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D5D15E21EA0027500F5C693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D15E11EA0027500F5C693 /* AppDelegate.swift */; };
-		8D5D15E41EA0027500F5C693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D15E31EA0027500F5C693 /* ViewController.swift */; };
+		8D5D15E41EA0027500F5C693 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D15E31EA0027500F5C693 /* SignupViewController.swift */; };
 		8D5D15E71EA0027600F5C693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D15E51EA0027600F5C693 /* Main.storyboard */; };
 		8D5D15E91EA0027600F5C693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D15E81EA0027600F5C693 /* Assets.xcassets */; };
 		8D5D15EC1EA0027600F5C693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D15EA1EA0027600F5C693 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		2BDE36387C95DFEA74DBEBA8 /* Pods-SocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		8D5D15DE1EA0027500F5C693 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5D15E11EA0027500F5C693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D5D15E31EA0027500F5C693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D5D15E31EA0027500F5C693 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		8D5D15E61EA0027600F5C693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D5D15E81EA0027600F5C693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D5D15EB1EA0027600F5C693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,8 +72,10 @@
 		8D5D15E01EA0027500F5C693 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				8DD0E66A1EA0066C0080EF48 /* Model */,
+				8DD0E66B1EA006710080EF48 /* View */,
+				8DD0E66C1EA006770080EF48 /* Controller */,
 				8D5D15E11EA0027500F5C693 /* AppDelegate.swift */,
-				8D5D15E31EA0027500F5C693 /* ViewController.swift */,
 				8D5D15E51EA0027600F5C693 /* Main.storyboard */,
 				8D5D15E81EA0027600F5C693 /* Assets.xcassets */,
 				8D5D15EA1EA0027600F5C693 /* LaunchScreen.storyboard */,
@@ -81,6 +83,28 @@
 				8D5D15F31EA0035200F5C693 /* GoogleService-Info.plist */,
 			);
 			path = SocialNetwork;
+			sourceTree = "<group>";
+		};
+		8DD0E66A1EA0066C0080EF48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8DD0E66B1EA006710080EF48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8DD0E66C1EA006770080EF48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D5D15E31EA0027500F5C693 /* SignupViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		E5982A4786C4EB6806BE1644 /* Frameworks */ = {
@@ -216,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5D15E41EA0027500F5C693 /* ViewController.swift in Sources */,
+				8D5D15E41EA0027500F5C693 /* SignupViewController.swift in Sources */,
 				8D5D15E21EA0027500F5C693 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +407,7 @@
 				8D5D15F21EA0027600F5C693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

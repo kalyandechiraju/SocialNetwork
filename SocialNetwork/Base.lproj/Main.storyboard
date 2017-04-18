@@ -37,6 +37,9 @@
                                 <state key="normal" title="Login with Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaE-fv-lnu"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1r-oD-DuI">
                                 <rect key="frame" x="16" y="300" width="288" height="30"/>
@@ -66,6 +69,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5j-Wd-cM6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-jX-Fhy">
                                         <rect key="frame" x="149" y="0.0" width="139" height="40"/>
@@ -73,6 +79,9 @@
                                         <state key="normal" title="Signup">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWn-6y-9cg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -99,6 +108,10 @@
                             <constraint firstItem="Vwz-oN-FcE" firstAttribute="top" secondItem="OUe-Dm-e4O" secondAttribute="bottom" constant="8" id="zmk-kz-XH3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="S1r-oD-DuI" id="KeD-Dw-raH"/>
+                        <outlet property="passwordField" destination="OUe-Dm-e4O" id="Aak-wc-PnG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -46,13 +46,17 @@ class SignupViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if let email = emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
             if let password = passwordField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
-                FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
-                    if error != nil {
-                        print("Login Failed")
-                    } else {
-                        print("Logged in successfully")
-                        self.navigateToUserFeed()
+                if email != "" && password != "" {
+                    FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
+                        if error != nil {
+                            print("Login Failed")
+                        } else {
+                            print("Logged in successfully")
+                            self.navigateToUserFeed()
+                        }
                     }
+                } else {
+                    print("Enter email and password")
                 }
             }
         }
@@ -61,13 +65,17 @@ class SignupViewController: UIViewController {
     @IBAction func signupButtonPressed(_ sender: UIButton) {
         if let email = emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
             if let password = passwordField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
-                FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
-                    if error != nil {
-                        print("Signup Failed")
-                    } else {
-                        print("Signed up successfully")
-                        self.navigateToUserFeed()
+                if email != "" && password != "" {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+                        if error != nil {
+                            print("Signup Failed")
+                        } else {
+                            print("Signed up successfully")
+                            self.navigateToUserFeed()
+                        }
                     }
+                } else {
+                    print("Enter email and password")
                 }
             }
         }

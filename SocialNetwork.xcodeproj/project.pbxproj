@@ -13,6 +13,8 @@
 		8D5D15E91EA0027600F5C693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D15E81EA0027600F5C693 /* Assets.xcassets */; };
 		8D5D15EC1EA0027600F5C693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D15EA1EA0027600F5C693 /* LaunchScreen.storyboard */; };
 		8D5D15F41EA0035200F5C693 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D15F31EA0035200F5C693 /* GoogleService-Info.plist */; };
+		8DF0C5E21EA7E7F000905811 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF0C5E11EA7E7F000905811 /* CircleImageView.swift */; };
+		8DF0C5E41EA9356100905811 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF0C5E31EA9356100905811 /* ShadowView.swift */; };
 		C653E698597ED7AD69F68DD7 /* Pods_SocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC49233C3FDC5EE3D7AE18D /* Pods_SocialNetwork.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		8D5D15EB1EA0027600F5C693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D5D15ED1EA0027600F5C693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D5D15F31EA0035200F5C693 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DF0C5E11EA7E7F000905811 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		8DF0C5E31EA9356100905811 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		BDC49233C3FDC5EE3D7AE18D /* Pods_SocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBA5F85E3042D4E3E8B4A09 /* Pods-SocialNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork/Pods-SocialNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +99,8 @@
 		8DD0E66B1EA006710080EF48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8DF0C5E11EA7E7F000905811 /* CircleImageView.swift */,
+				8DF0C5E31EA9356100905811 /* ShadowView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -240,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF0C5E41EA9356100905811 /* ShadowView.swift in Sources */,
 				8D5D15E41EA0027500F5C693 /* SignupViewController.swift in Sources */,
+				8DF0C5E21EA7E7F000905811 /* CircleImageView.swift in Sources */,
 				8D5D15E21EA0027500F5C693 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
